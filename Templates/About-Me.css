@@ -148,12 +148,12 @@ body {
 }
 
 .html {
-    width: 75%; /* 75% of the total 400px width */
+    width: 80%; /* 75% of the total 400px width */
     background-color: #4E5180; /* Orange */
 }
 
 .css {
-    width: 75%; /* 75% of the total 400px width */
+    width: 80%; /* 75% of the total 400px width */
     background-color: #4E5180; /* Blue */
 }
 
