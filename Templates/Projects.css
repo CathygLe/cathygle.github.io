@@ -1,0 +1,29 @@
+.Projects{
+    overflow: hidden;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), 
+        url('../Images/background-2.jpg'); /* Path to your background image */
+    background-size: cover;       /* Ensures the background covers the entire div */
+    background-position: center; /* Centers the background */
+    background-attachment: scroll; /* Optional: Creates a parallax effect */
+    height: 100vh;               /* Ensures it takes the full viewport height */
+    display: flex;               /* Centers content inside */
+    justify-content: center;     
+    align-items: center;         
+}
+.Projects-Text h1{
+    font-size: 80px;
+    color: white;
+    height: 100%; /* Full height of the viewport */
+    width: 100%; /* Full width of the page */
+    text-align: center;
+
+}
+
+.Projects-Text p{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+
+}

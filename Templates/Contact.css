@@ -1,0 +1,77 @@
+.Contact{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), 
+            url('../Images/background-3.jpg');
+    background-size: cover;       /* Ensures the background covers the entire div */
+    background-position: center; /* Centers the background */
+    background-attachment: scroll; /* Optional: Creates a parallax effect */
+    height: 100vh;               /* Ensures it takes the full viewport height */
+    display: flex;               /* Centers content inside */
+    flex-direction: column;    
+    align-items: center;     
+    height: 100vh;  
+    justify-content: center;    
+    color:white;  
+        
+}
+
+
+.Contact h1 { 
+    font-size: 40px;
+    color: #4E5180; 
+    width: 100%;
+    text-align: center;  
+    margin-top: 100px;
+
+}
+
+.Contact h2 { 
+    font-size: 50px;
+    color: white;
+
+}
+
+
+.Contact h3 { 
+    font-size: 25px;
+    color: white;
+    
+}
+
+.Contact p, a { 
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    padding:2px;
+}
+
+.Contact a:hover {
+    color: #4E5180; /* Darker blue on hover */
+}
+
+.links-container {
+    margin-bottom: 30px;
+
+    margin-top: auto; 
+    display:flex; 
+    align-items: center;
+}
+
+.links-container a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+
+}
+
+.links-container a:hover {
+    color: #4E5180; /* Darker blue on hover */
+}
+
+
+.icon {
+    width: 20px;               /* Adjust size of the icon */
+    height: 20px;              /* Adjust size of the icon */
+    margin-right: 0;        /* Space between the icon and the text */
+}
