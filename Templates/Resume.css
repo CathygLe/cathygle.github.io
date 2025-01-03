@@ -1,7 +1,7 @@
 .Resume {
     background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), 
-            url('../Images/background-3.jpg');
+    linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), 
+            url('/Images/background-4.jpeg');
     background-size: cover;       /* Ensures the background covers the entire div */
     background-position: center; /* Centers the background */
     background-attachment: scroll;
@@ -13,6 +13,12 @@
 
 .Resume h1{
     font-size: 50px;
+    color: #fff;
+    text-align: center; 
+}
+
+.Resume p{
+    font-size: 30px;
     color: #fff;
     text-align: center; 
 }
@@ -30,6 +36,7 @@
     position: relative;
     width: 42%;
     animation: movedown 1s linear forwards;
+    animation-delay: 8s;
     opacity: 0;
     z-index: 10;
 }
@@ -99,7 +106,7 @@
     left: 50%;
     margin-left: -3px;
     z-index: 0; 
-    animation: moveline 6s linear forwards;
+    animation: moveline 15s linear infinite;
 }
 
 
