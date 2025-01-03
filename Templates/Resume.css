@@ -12,13 +12,13 @@
 }
 
 .Resume h1{
-    font-size: 50px;
+    font-size: 65px;
     color: #fff;
     text-align: center; 
 }
 
 .Resume p{
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     text-align: center; 
 }
@@ -39,6 +39,9 @@
     animation-delay: 8s;
     opacity: 0;
     z-index: 10;
+    font-size: 15px;
+    color: #000;
+    text-align: left;
 }
 
 @keyframes movedown {
@@ -93,6 +96,13 @@
     display:inline-block;
     margin-bottom: 15px;
     
+}
+
+.text-box p{
+    color: #000;
+    font-size: 15px;
+    text-align: left;
+
 }
 
 
