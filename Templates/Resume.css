@@ -1,6 +1,6 @@
 .Resume {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), 
+        linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), 
             url('../Images/background-3.jpg');
     background-size: cover;       /* Ensures the background covers the entire div */
     background-position: center; /* Centers the background */
@@ -13,7 +13,7 @@
 
 .Resume h1{
     font-size: 50px;
-    color: #4E5180;
+    color: #fff;
     text-align: center; 
 }
 
@@ -162,5 +162,28 @@
     border-bottom: 10px solid transparent;
     border-right: 10px solid #e0e0e0;
     left: -10px; 
+
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4E5180;  /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #000; /* Darker green on hover */
+}
+
+.cv-link {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    margin: 20px auto 50px;
 
 }
