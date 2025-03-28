@@ -1,21 +1,30 @@
-.Projects{
+.Projects {
     overflow: hidden;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), 
-        url('../Images/background-2.jpg'); /* Path to your background image */
-    background-size: cover;       /* Ensures the background covers the entire div */
-    background-position: center; /* Centers the background */
-    background-attachment: scroll; /* Optional: Creates a parallax effect */
-    height: 100vh;               /* Ensures it takes the full viewport height */
-    display: flex;               /* Centers content inside */
-    justify-content: center;     
-    align-items: center;         
+        url('../Images/background-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    height: 180vh;
+    display: flex;
+    flex-direction: column; /* Stack the text and grid vertically */
+    justify-content: flex-start; /* Aligns the content at the top */
+    align-items: center; /* Centers content horizontally */
+    padding-top: 30px; /* Adds some spacing at the top */
 }
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
 .Projects-Text h1{
     font-size: 80px;
     color: white;
-    height: 100%; /* Full height of the viewport */
-    width: 100%; /* Full width of the page */
     text-align: center;
 
 }
@@ -26,4 +35,51 @@
     text-align: center;
     font-weight: 300;
 
+}
+
+/* Grid for the project squares */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.project-square {
+    background-color: rgba(255, 255, 255, 0.75); /* Light background for the square */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-square a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-square:hover {
+    transform: scale(1.05); /* Slightly enlarges the square */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-square h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-top: 5px;
+
+}
+
+.project-square p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
 }

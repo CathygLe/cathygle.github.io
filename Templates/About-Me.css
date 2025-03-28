@@ -64,19 +64,16 @@ body {
 
 @keyframes slide {
     0% {
-        transform: translateX(0); /* Show the first image */
+        transform: translateX(0);
     }
-    25% {
-        transform: translateX(0); /* Keep showing the first image */
+    33% {
+        transform: translateX(-100%);
     }
-    50% {
-        transform: translateX(-100%); /* Show the second image */
-    }
-    75% {
-        transform: translateX(-200%); /* Show the third image */
+    66% {
+        transform: translateX(-200%);
     }
     100% {
-        transform: translateX(-300%); /* Show the clone of the first image */
+        transform: translateX(0);
     }
 }
 
@@ -162,7 +159,7 @@ body {
     background-color: #4E5180; /* Red */
 }
 
-.dr-racket {
+.java {
     width: 95%; /* 95% of the total 400px width */
     background-color: #4E5180; /* Purple */
 }
