@@ -6,12 +6,13 @@
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    height: 180vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column; /* Stack the text and grid vertically */
     justify-content: flex-start; /* Aligns the content at the top */
     align-items: center; /* Centers content horizontally */
     padding-top: 30px; /* Adds some spacing at the top */
+    padding-bottom: 60px;
 }
 
 .projects-header {
@@ -51,7 +52,7 @@
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
