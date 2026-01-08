@@ -1,15 +1,16 @@
 body, html {
     height: 100%;
     scroll-behavior: smooth; /* Enables smooth scrolling */
-    overflow: hidden; 
-    margin-top:0;
+    overflow: auto; /* allow normal page scrolling */
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 .scroll-container {
     scroll-snap-type: y mandatory; /* Enables vertical snapping */
-    overflow-y: scroll; /* Adds vertical scrolling */
-    height: 100%; /* Full viewport height */
-
+    overflow-y: visible; /* Adds vertical scrolling within the container */
+    height: 100vh; /* Full viewport height */
 }
 
 .Page {

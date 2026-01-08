@@ -1,16 +1,17 @@
 /* Intro component styles moved out of Global.css for better scoping */
 .intro-page {
     position: relative;
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: visible;
+    z-index: 0; 
 }
 
 /* Background image container */
 .intro-background {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100vw;
@@ -23,7 +24,7 @@
 
 /* Semi-opaque overlay to improve text contrast */
 .intro-overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
@@ -35,6 +36,13 @@
     align-items: center;
 }
 
+/* Next section after intro */
+.next-section {
+    position: relative;
+    min-height: 100vh;
+    background: white;
+    z-index: 1; /* make sure it's above background if needed */
+}
 /* Centered content above background/overlay */
 .intro-content {
     position: relative;
