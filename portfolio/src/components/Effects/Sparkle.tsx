@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../styles/Sparkle.css";
+import "../../styles/Sparkle.css";
 
 const StarSparkles: React.FC = () => {
   useEffect(() => {

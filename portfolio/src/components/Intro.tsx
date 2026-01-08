@@ -1,5 +1,5 @@
 import React from "react";
-import Typewriter from "./Typewriter";
+import Typewriter from "./Effects/Typewriter";
 import "../styles/Global.css";
 import "../styles/Intro.css";
 import background from "../assets/images/background.jpg";

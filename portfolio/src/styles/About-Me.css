@@ -122,24 +122,21 @@
     .introduction p { font-size: 1rem; }
 }
 
-
-
-
 /* Container for all icons */
 .tech-icons, .tools-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
 
 }
 
 /* Individual icon block */
 .icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.2s ease, filter 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .icon span {
@@ -148,14 +145,78 @@
 }
 
 .custom-icon {
-  width: 60px;  
-  height: 60px; 
-  object-fit: contain; 
-  display: block;
+    width: 60px;  
+    height: 60px; 
+    object-fit: contain; 
+    display: block;
 }
 
 
-.icon:hover {
-  transform: translateY(-20px);
-  filter: brightness(1.1);
+.hobbies-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 35px; 
+    flex-wrap: wrap; 
+}
+
+.hobby-box {
+    width: 430px;
+    height: 500px; 
+    background-color: #ccc;
+    border-radius: 215px 215px 0 0; /* top-left & top-right rounded, bottom-left & bottom-right square */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* start from top */
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+
+.hobby-photo {
+    width: 95%;           /* fill the full width of the hobby box */
+    height: 55%;           /* take the top 60% of the arch */
+    overflow: hidden;
+    border-radius: 215px 215px 0 0; /* match the top arch of the hobby box */
+    margin-bottom: 10px;   /* space between image and description */
+    margin-top: 10px
+}
+
+.hobby-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures the image fills the container nicely */
+    display: block;
+}
+
+.hobby-box h3,
+.hobby-box p {
+    color: #333; 
+    margin-top: 2px; 
+    text-align: center; 
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hobby-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hobby-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;       /* vertical offset */
+  left: 10px;      /* horizontal offset */
+  width: 100%;
+  height: 100%;
+  border: 4px solid rgb(80, 82, 114);  
+  border-radius: 215px 215px 0 0; 
+  z-index: -1;
+  background-color: transparent; 
 }

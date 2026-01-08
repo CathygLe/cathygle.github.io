@@ -1,7 +1,7 @@
 import React from "react";
 import Intro from "./components/Intro";
 import AboutMe from "./components/AboutMe";
-import StarSparkles from "./components/Sparkle";
+import StarSparkles from "./components/Effects/Sparkle";
 
 
 const App: React.FC = () => {
