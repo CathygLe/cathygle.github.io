@@ -121,3 +121,41 @@
     .introduction h2 { font-size: 1.15rem; }
     .introduction p { font-size: 1rem; }
 }
+
+
+
+
+/* Container for all icons */
+.tech-icons, .tools-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; 
+
+}
+
+/* Individual icon block */
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.icon span {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.custom-icon {
+  width: 60px;  
+  height: 60px; 
+  object-fit: contain; 
+  display: block;
+}
+
+
+.icon:hover {
+  transform: translateY(-20px);
+  filter: brightness(1.1);
+}
