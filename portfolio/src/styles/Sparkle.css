@@ -1,17 +1,17 @@
-/* small sparkle specs */
 .spec {
   position: fixed;
   pointer-events: none;
-  width: 4px;  /* tiny */
-  height: 4px;
+  width: 3px;
+  height: 3px;
   background: white;
   border-radius: 50%;
-  opacity: 0.7; /* visible but subtle */
-  transform: translate(-50%, -50%) scale(1);
+  box-shadow:
+    0 0 4px white,
+    0 0 8px rgba(255,255,255,0.8);
+  opacity: 0.8;
+  transform: translate(-50%, -50%);
   animation: specAnim 0.6s forwards;
-  z-index: 10000;
 }
-
 @keyframes specAnim {
   0% {
     opacity: 0.8;
