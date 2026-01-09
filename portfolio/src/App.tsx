@@ -1,6 +1,7 @@
 import React from "react";
 import Intro from "./components/Intro";
 import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
 import StarSparkles from "./components/Effects/Sparkle";
 
 
@@ -14,6 +15,10 @@ const App: React.FC = () => {
 
       <section className="Page" id="About-Me-Page">
         <AboutMe />
+      </section>
+
+      <section className="Page" id="Projects-Page">
+        <Projects />
       </section>
     </div>
 

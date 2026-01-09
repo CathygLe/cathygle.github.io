@@ -75,7 +75,7 @@ const AboutMe: React.FC = () => {
                 <div className="headshot"><img src={headshot3} alt="Photo 3" /></div>
             </div>
         </div>
-        <h2> My Hobbies </h2>
+        <h2 style={{ fontSize: "35px"}}>My Hobbies</h2>
             <div className="hobbies-container">
                 <div className="hobbies-container">
                     {hobbies.map((hobby, index) => (
@@ -88,7 +88,7 @@ const AboutMe: React.FC = () => {
                     ))}
                 </div>
             </div>
-        <h2>Programming Languages</h2>
+        <h2 style={{ fontSize: "30px"}}>Programming Languages</h2>
             <div className="tech-icons">
                 <AnimatedIcon src={python} alt="Python" label="Python" fromLeft={true} />
                 <AnimatedIcon src={c} alt="C/C++" label="C++" fromLeft={false} />
@@ -99,8 +99,8 @@ const AboutMe: React.FC = () => {
                 <AnimatedIcon src={racket} alt="Racket" label="Dr Racket" fromLeft={true} />
             </div>
 
-        <h2>Tools & Platforms</h2>
-            <div className="tools-icons">
+        <h2 style={{ fontSize: "30px"}}>Tools & Platforms</h2>
+            <div className="tools-icons" style={{ marginBottom: '40px' }}>
                 <AnimatedIcon src={github} alt="GitHub" label="GitHub" fromLeft={true} />
                 <AnimatedIcon src={jira} alt="Jira" label="Jira" fromLeft={false} />
                 <AnimatedIcon src={figma} alt="Figma" label="Figma" fromLeft={true} />
@@ -108,29 +108,7 @@ const AboutMe: React.FC = () => {
                 <AnimatedIcon src={firebase} alt="Firebase" label="Firebase" fromLeft={true} />
                 <AnimatedIcon src={react} alt="React" label="React" fromLeft={false} />
             </div>
-
-        <a href="#About-Me-Page" className="scroll-down" aria-label="Scroll to About">
-          <svg
-            viewBox="0 0 24 24"
-            width="32"
-            height="32"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            className="transition-transform duration-300 hover:translate-y-1"
-          >
-            {/* Soft circle */}
-            <circle cx="12" cy="12" r="10" stroke="rgba(255,255,255)" strokeWidth="1" fill="none" />
-            {/* Thinner arrow */}
-            <path
-              d="M8 10l4 4 4-4"
-              stroke="rgba(255,255,255,0.8)"
-              strokeWidth="1.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              fill="none"
-            />
-          </svg>
-        </a>
+        
     </div>
 
 
