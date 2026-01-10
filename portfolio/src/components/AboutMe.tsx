@@ -69,11 +69,11 @@ const AboutMe: React.FC = () => {
                 </p>
             </motion.div>
 
-            {/* <div className="headshot-scroll">
+            <div className="headshot-scroll">
                 <div className="headshot"><img src={headshot1} alt="Photo 1" /></div>
                 <div className="headshot"><img src={headshot2} alt="Photo 2" /></div>
                 <div className="headshot"><img src={headshot3} alt="Photo 3" /></div>
-            </div> */}
+            </div>
         </div>
         <h2 style={{ fontSize: "35px"}}>My Hobbies</h2>
             <div className="hobbies-container">
