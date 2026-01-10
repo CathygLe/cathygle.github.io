@@ -32,25 +32,9 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
                 <div key={index} className="timeline-item">
                     <div className={`timeline-item-wrapper ${item.direction}`}>
                         <div
-                            className={`timeline-date ${item.direction}`}
-                            style={{
-                                transform: item.direction === "left" ? "translateX(920px)" : "translateX(-950px)",
-                                top: "50%",
-                            }}
-                            >
+                            className={`timeline-date ${item.direction}`}>
                             {item.date}
                         </div>
-
-                        {/* {item.logo && (
-                            <img
-                                src={item.logo}
-                                alt={`${item.company} logo`}
-                                className="timeline-logo"
-                                style={{
-                                left: item.direction === "left" ? "calc(750 px)" : "calc(-90px)"
-                                }}
-                            />
-                        )} */}
 
                         <div className="description-border">
                             <div className="description-box">

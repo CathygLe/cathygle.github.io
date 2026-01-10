@@ -7,11 +7,11 @@
 }
 
 .timeline-item-wrapper.left {
-  transform: translateX(-350px);
+  transform: translateX(-385px);
 }
 
 .timeline-item-wrapper.right {
-  transform: translateX(350px);
+  transform: translateX(385px);
 }
 
 .description-border {
@@ -106,51 +106,7 @@
     margin-bottom: 5px;
     border-radius: 1px;       /* optional, smooth edges */
 }
-/* Marker container for circle and arrow */
-.timeline-marker {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 15px; /* space between marker and box */
-  position: relative;
-  z-index: 1;
-}
 
-/* Circle */
-.timeline-circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #fdfdfd;
-  border: 2px solid #ffffff;
-  z-index: 2;
-}
-
-/* Arrow pointing to box */
-.timeline-arrow {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  margin-top: -1px; /* slight overlap for triangle and circle */
-}
-
-/* Arrow directions */
-.timeline-arrow.left {
-  border-width: 10px 10px 10px 0; /* triangle pointing right */
-  border-color: transparent #ffffff transparent transparent;
-}
-
-.timeline-arrow.right {
-  border-width: 10px 0 10px 10px; /* triangle pointing left */
-  border-color: transparent transparent transparent #ffffff;
-}
-
-/* Flip marker if direction is right */
-.timeline-marker.right {
-  order: 2;
-  margin-left: 15px;
-  margin-right: 0;
-}
 
 /* Make sure the content box and marker are aligned */
 .timeline-item {
@@ -174,26 +130,29 @@
 
 .timeline-item-wrapper {
   position: relative; /* needed for absolute positioning */
+  align-items: center;
 }
 
 .timeline-date {
   position: absolute;
-  top: 0;
+  top: 50%;                    /* move to middle */
+  transform: translateY(-50%); /* offset by half its height */
   font-weight: bold;
   white-space: nowrap;
   color: #ffffff;
   z-index: 10;
-  justify-content: center;
 }
 
 .timeline-date.left {
-  right: 100%;
-  margin-right: 20px; /* optional spacing */
+  left: 780px;
+  flex-direction: row;
+  text-align: right;
 }
 
 .timeline-date.right {
-  left: 100%;
-  margin-left: 20px;
+  right: 780px;
+  flex-direction: row;
+  text-align: right;
 }
 
 /* Logo next to the date */
