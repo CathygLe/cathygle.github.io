@@ -1,0 +1,125 @@
+/* Intro component styles moved out of Global.css for better scoping */
+.intro-page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    z-index: 0; 
+}
+
+/* Background image container */
+.intro-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* Semi-opaque overlay to improve text contrast */
+.intro-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.60);
+    z-index: 2;
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;
+}
+
+/* Next section after intro */
+.next-section {
+    position: relative;
+    min-height: 100vh;
+    background: white;
+    z-index: 1; /* make sure it's above background if needed */
+}
+/* Centered content above background/overlay */
+.intro-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    max-width: 1000px;      
+    width: 100%;
+    margin-inline: auto; 
+    text-align: left;
+    color: white;
+
+}
+
+/* make the text block centered in the viewport but left-aligned inside the block */
+.intro-content h1 {
+    text-align: left;
+}
+
+.website-text {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Scroll-down arrow */
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18px;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    text-decoration: none;
+    opacity: 0.95;
+}
+
+.scroll-down svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.scroll-down:hover {
+    opacity: 1;
+}
+
+.scroll-down {
+    animation: scrollBounce 1.6s infinite;
+}
+
+@keyframes scrollBounce {
+    0% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+    100% { transform: translateX(-50%) translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .intro-content {
+        margin-left: 0;
+        margin-right: 0;
+        margin-inline: auto;
+        width: 90%;
+        padding: 1rem;
+        transform: none;
+    }
+
+    .website-text {
+        white-space: normal;
+        min-width: 0;
+        font-size: 6.5vw; 
+    }
+}
