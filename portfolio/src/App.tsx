@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import StarSparkles from "./components/Effects/Sparkle";
 import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,11 @@ const App: React.FC = () => {
       <section className="Page" id="Resume-Page">
         <Resume />
       </section>
+
+      <section className="Page" id="Contact-Page">
+        <Contact />
+      </section>
+
     </div>
 
     

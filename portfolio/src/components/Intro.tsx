@@ -7,10 +7,7 @@ import background from "../assets/images/background.jpg";
 const Intro: React.FC = () => {
   return (
     <div className="intro-page">
-      <div
-        className="intro-background"
-        style={{ backgroundImage: `url(${background})` }}
-      ></div>
+      <div className="intro-background"style={{ backgroundImage: `url(${background})` }}></div>
 
       <div className="intro-overlay">
 

@@ -1,77 +1,41 @@
-.Contact{
+.contact-page {
+    overflow: hidden;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), 
-            url('../Images/background-3.jpg');
-    background-size: cover;       /* Ensures the background covers the entire div */
-    background-position: center; /* Centers the background */
-    background-attachment: scroll; /* Optional: Creates a parallax effect */
-    height: 100vh;               /* Ensures it takes the full viewport height */
-    display: flex;               /* Centers content inside */
-    flex-direction: column;    
-    align-items: center;     
-    height: 100vh;  
-    justify-content: center;    
-    color:white;  
-        
-}
+        url('../assets/images/background-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
 
-
-.Contact h1 { 
-    font-size: 40px;
-    color: #4E5180; 
-    width: 100%;
-    text-align: center;  
-    margin-top: 95px;
-
-}
-
-.Contact h2 { 
-    font-size: 60px;
-    color: white;
-
-}
-
-
-.Contact h3 { 
-    font-size: 25px;
-    color: #e0e0e0;
+    height: 100vh;          /* Force full viewport height */
+    width: 100%;            /* Full width */
     
-}
-
-.Contact p, a { 
-    font-size: 18px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;  /* Center content vertically */
+    align-items: center;      /* Center content horizontally */
+    
+    padding: 0;              /* Remove extra padding */
+    margin: 0;               /* Remove body/html margin */
+    box-sizing: border-box;  /* Include padding in height calculation */
     color: white;
-    font-weight: 300;
-    text-decoration: none;
-    padding:2px;
 }
 
-.Contact a:hover {
-    color: #4E5180; /* Darker blue on hover */
-}
-
-.links-container {
-    margin-bottom: 30px;
-
-    margin-top: auto; 
-    display:flex; 
+.contact-content {
+    flex-direction: column; 
+    display: flex;
     align-items: center;
 }
 
-.links-container a {
-    color: white;
-    text-decoration: none;
-    padding: 20px;
+.contact-content h1 {
+    font-size: 60px;
+    color: #ffffff;
 
 }
 
-.links-container a:hover {
-    color: #4E5180; /* Darker blue on hover */
+.contact-content h2 {
+    font-size: 40px;
+    color: #ffffff88;
 }
 
 
-.icon {
-    width: 20px;               /* Adjust size of the icon */
-    height: 20px;              /* Adjust size of the icon */
-    margin-right: 0;        /* Space between the icon and the text */
-}
