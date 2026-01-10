@@ -110,7 +110,7 @@
 .tech-header {
   display: flex;
   align-items: center;
-  justify-content: center; /* center the text */
+  justify-content: center; 
   margin: 15px 0;
   font-weight: 600;
   font-size: 16px;
@@ -118,22 +118,22 @@
 }
 
 .tech-header span {
-  padding: 0 10px; /* space between text and lines */
+  padding: 0 10px; 
   position: relative;
 }
 
 .tech-header::before,
 .tech-header::after {
   content: "";
-  flex: 1; /* lines expand to fill space */
-  height: 2px; /* thickness of line */
-  background-color: #4E5180; /* color of the line */
+  flex: 1; 
+  height: 2px; 
+  background-color: #4E5180; 
 }
 
 .tech-header::before {
-  margin-right: 10px; /* space between line and text */
+  margin-right: 10px; 
 }
 
 .tech-header::after {
-  margin-left: 10px; /* space between line and text */
+  margin-left: 10px; 
 }

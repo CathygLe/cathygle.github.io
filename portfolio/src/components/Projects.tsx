@@ -86,6 +86,30 @@ const Projects: React.FC = () => {
                 </motion.a>
             ))}
         </div>
+
+         <a href="#Resume-Page" className="scroll-down2" aria-label="Scroll to Experience"
+            style={{ marginTop: "20px" }}>
+            <svg
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            className="transition-transform duration-300 hover:translate-y-1"
+            >
+            {/* Soft circle */}
+            <circle cx="12" cy="12" r="10" stroke="rgba(255,255,255)" strokeWidth="1" fill="none" />
+            {/* Thinner arrow */}
+            <path
+                d="M8 10l4 4 4-4"
+                stroke="rgba(255,255,255,0.8)"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+            />
+            </svg>
+        </a>
     </div>
   );
 };

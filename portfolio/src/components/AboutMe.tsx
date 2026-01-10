@@ -69,11 +69,11 @@ const AboutMe: React.FC = () => {
                 </p>
             </motion.div>
 
-            <div className="headshot-scroll">
+            {/* <div className="headshot-scroll">
                 <div className="headshot"><img src={headshot1} alt="Photo 1" /></div>
                 <div className="headshot"><img src={headshot2} alt="Photo 2" /></div>
                 <div className="headshot"><img src={headshot3} alt="Photo 3" /></div>
-            </div>
+            </div> */}
         </div>
         <h2 style={{ fontSize: "35px"}}>My Hobbies</h2>
             <div className="hobbies-container">
@@ -100,7 +100,7 @@ const AboutMe: React.FC = () => {
             </div>
 
         <h2 style={{ fontSize: "30px"}}>Tools & Platforms</h2>
-            <div className="tools-icons" style={{ marginBottom: '40px' }}>
+            <div className="tools-icons">
                 <AnimatedIcon src={github} alt="GitHub" label="GitHub" fromLeft={true} />
                 <AnimatedIcon src={jira} alt="Jira" label="Jira" fromLeft={false} />
                 <AnimatedIcon src={figma} alt="Figma" label="Figma" fromLeft={true} />
@@ -108,10 +108,29 @@ const AboutMe: React.FC = () => {
                 <AnimatedIcon src={firebase} alt="Firebase" label="Firebase" fromLeft={true} />
                 <AnimatedIcon src={react} alt="React" label="React" fromLeft={false} />
             </div>
-        
+        <a href="#Projects-Page" className="scroll-down2" aria-label="Scroll to Projects">
+          <svg
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            className="transition-transform duration-300 hover:translate-y-1"
+          >
+            {/* Soft circle */}
+            <circle cx="12" cy="12" r="10" stroke="rgba(255,255,255)" strokeWidth="1" fill="none" />
+            {/* Thinner arrow */}
+            <path
+              d="M8 10l4 4 4-4"
+              stroke="rgba(255,255,255,0.8)"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+            />
+          </svg>
+        </a>
     </div>
-
-
   );
 };
 

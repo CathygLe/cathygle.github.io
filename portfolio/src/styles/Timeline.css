@@ -15,16 +15,16 @@
 }
 
 .description-border {
-    width: 600px;                 /* fixed width */
-    /* background-color: rgba(43, 42, 42, 0.6);     */
-    border: 2px solid #ffffff;    /* white border */
-    border-radius: 8px;           /* rounded corners */
+    width: 600px;                 
+    border: 2px solid #ffffff;    
+    border-radius: 8px;         
     display: flex;
-    justify-content: center;      /* centers inner content */
-    padding: 10px;                /* inner spacing */
+    justify-content: center;      
+    padding: 10px;                
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), 
         url('../assets/images/background-5.jpg');
+    box-shadow: 0 0 60px #4E5180; 
 }
 
 .description-box {
@@ -65,7 +65,7 @@
 .tech-header2 {
     display: flex;
     align-items: center;
-    justify-content: center; /* center the text */
+    justify-content: center; 
     margin: 15px 0;
     font-weight: 600;
     font-size: 16px;
@@ -75,17 +75,17 @@
 .tech-header2::before,
 .tech-header2::after {
     content: "";
-    flex: 1; /* lines expand to fill space */
-    height: 2px; /* thickness of line */
-    background-color: #fdfdfd; /* color of the line */
+    flex: 1; 
+    height: 2px; 
+    background-color: #fdfdfd; 
 }
 
 .tech-header2::before {
-    margin-right: 10px; /* space between line and text */
+    margin-right: 10px; 
 }
 
 .tech-header2::after {
-    margin-left: 10px; /* space between line and text */
+    margin-left: 10px;
 }
 
 .tech-list {
@@ -97,18 +97,17 @@
 }
 
 .company-name::after {
-    content: "";              /* required for pseudo-element */
-    display: block;           /* makes it render as a block element */
-    width: 100%;              /* line spans the full width */
-    height: 2px;              /* thickness of the line */
-    background-color: #fdfdfd;/* color of the line */
-    margin-top: 15px;          /* space between text and line */
+    content: "";              
+    display: block;           
+    width: 100%;            
+    height: 2px;              
+    background-color: #fdfdfd;
+    margin-top: 15px;         
     margin-bottom: 5px;
-    border-radius: 1px;       /* optional, smooth edges */
+    border-radius: 1px;       
 }
 
 
-/* Make sure the content box and marker are aligned */
 .timeline-item {
   display: flex;
   align-items: flex-start;
@@ -118,7 +117,7 @@
 
 .timeline-circle-centered {
   position: absolute;
-  left: 50%; /* center horizontally on the page */
+  left: 50%;
   transform: translateX(-50%);
   width: 16px;
   height: 16px;
@@ -129,14 +128,14 @@
 }
 
 .timeline-item-wrapper {
-  position: relative; /* needed for absolute positioning */
+  position: relative; 
   align-items: center;
 }
 
 .timeline-date {
   position: absolute;
-  top: 50%;                    /* move to middle */
-  transform: translateY(-50%); /* offset by half its height */
+  top: 50%;                    
+  transform: translateY(-50%); 
   font-weight: bold;
   white-space: nowrap;
   color: #ffffff;
@@ -155,14 +154,14 @@
   text-align: right;
 }
 
-/* Logo next to the date */
+
 .timeline-logo {
-    position: fixed;       /* fixed relative to viewport */
-    top: 50%;              /* vertical center of viewport */
-    width: 100px;           /* fixed width */
-    height: 100px;          /* fixed height */
+    position: fixed;      
+    top: 50%;              
+    width: 100px;          
+    height: 100px;          
     object-fit: contain;   
-    transform: translate(-50%, -50%); /* truly center it */
+    transform: translate(-50%, -50%);
     z-index: 10;
 }
 

@@ -5,10 +5,12 @@ import Projects from "./components/Projects";
 import StarSparkles from "./components/Effects/Sparkle";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 
 const App: React.FC = () => {
   return (
     <div className="scroll-container">
+      <Navbar />
       <StarSparkles />
       <section className="Page" id="Intro-Page">
         <Intro />

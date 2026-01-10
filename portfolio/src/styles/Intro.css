@@ -97,7 +97,6 @@
     opacity: 1;
 }
 
-/* bounce animation */
 .scroll-down {
     animation: scrollBounce 1.6s infinite;
 }
@@ -108,7 +107,6 @@
     100% { transform: translateX(-50%) translateY(0); }
 }
 
-/* Responsive: on small screens center the box instead of offsetting it */
 @media (max-width: 768px) {
     .intro-content {
         margin-left: 0;
@@ -119,10 +117,9 @@
         transform: none;
     }
 
-    /* allow the website-text to wrap if needed on narrow screens */
     .website-text {
         white-space: normal;
         min-width: 0;
-        font-size: 6.5vw; /* scale text a bit on small screens */
+        font-size: 6.5vw; 
     }
 }

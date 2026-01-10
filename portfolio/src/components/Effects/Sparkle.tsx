@@ -4,11 +4,10 @@ import "../../styles/Sparkle.css";
 const StarSparkles: React.FC = () => {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      // 10% chance to spawn a big star
       if (Math.random() < 0.1) {
         const star = document.createElement("div");
         star.className = "sparkle";
-        const size = Math.random() * 25 + 15; // 15–40px
+        const size = Math.random() * 25 + 15;
         star.style.width = `${size}px`;
         star.style.height = `${size}px`;
         const offsetX = Math.random() * 40 - 20;
@@ -19,7 +18,6 @@ const StarSparkles: React.FC = () => {
         setTimeout(() => star.remove(), 800);
       }
 
-      // 50% chance to spawn tiny specs
       if (Math.random() < 0.5) {
         const spec = document.createElement("div");
         spec.className = "spec";
