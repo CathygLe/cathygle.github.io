@@ -15,9 +15,10 @@
     padding-bottom: 60px;
 }
 .title {
-    font-size: 75px; /* your desired size */
+    font-size: 65px; /* your desired size */
     color: white;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    margin-top: 70px;
 }
 
 .projects-header {
@@ -28,18 +29,12 @@
     text-align: center;
 }
 
-.Projects-Text h1{
-    font-size: 80px;
-    color: white;
-    text-align: center;
-
-}
-
 .Projects-Text p{
     font-size: 25px;
     color: white;
     text-align: center;
     font-weight: 300;
+    margin-bottom: 40px;
 
 }
 

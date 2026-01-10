@@ -1,0 +1,209 @@
+.timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    margin-bottom: 30px; 
+    position: relative;
+}
+
+.timeline-item-wrapper.left {
+  transform: translateX(-350px);
+}
+
+.timeline-item-wrapper.right {
+  transform: translateX(350px);
+}
+
+.description-border {
+    width: 600px;                 /* fixed width */
+    /* background-color: rgba(43, 42, 42, 0.6);     */
+    border: 2px solid #ffffff;    /* white border */
+    border-radius: 8px;           /* rounded corners */
+    display: flex;
+    justify-content: center;      /* centers inner content */
+    padding: 10px;                /* inner spacing */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), 
+        url('../assets/images/background-5.jpg');
+}
+
+.description-box {
+    width: 90%; 
+    padding: 5px;  
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-name {
+    font-size: 20px;
+    margin-bottom: 8px;           
+}
+
+.role-name {
+    font-size: 15px;
+    margin: 2px 0 8px 0;
+}
+
+.description-list {
+    font-size: 15px;
+    margin: 0;           
+    padding-left: 20px; 
+}
+
+.tech-pill {
+    display: inline-block;
+    background-color: #81828bde;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.tech-header2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center the text */
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fdfdfd;
+}
+
+.tech-header2::before,
+.tech-header2::after {
+    content: "";
+    flex: 1; /* lines expand to fill space */
+    height: 2px; /* thickness of line */
+    background-color: #fdfdfd; /* color of the line */
+}
+
+.tech-header2::before {
+    margin-right: 10px; /* space between line and text */
+}
+
+.tech-header2::after {
+    margin-left: 10px; /* space between line and text */
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 8px;           
+    justify-content: center; 
+    margin-top: 10px;
+}
+
+.company-name::after {
+    content: "";              /* required for pseudo-element */
+    display: block;           /* makes it render as a block element */
+    width: 100%;              /* line spans the full width */
+    height: 2px;              /* thickness of the line */
+    background-color: #fdfdfd;/* color of the line */
+    margin-top: 15px;          /* space between text and line */
+    margin-bottom: 5px;
+    border-radius: 1px;       /* optional, smooth edges */
+}
+/* Marker container for circle and arrow */
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px; /* space between marker and box */
+  position: relative;
+  z-index: 1;
+}
+
+/* Circle */
+.timeline-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fdfdfd;
+  border: 2px solid #ffffff;
+  z-index: 2;
+}
+
+/* Arrow pointing to box */
+.timeline-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -1px; /* slight overlap for triangle and circle */
+}
+
+/* Arrow directions */
+.timeline-arrow.left {
+  border-width: 10px 10px 10px 0; /* triangle pointing right */
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.timeline-arrow.right {
+  border-width: 10px 0 10px 10px; /* triangle pointing left */
+  border-color: transparent transparent transparent #ffffff;
+}
+
+/* Flip marker if direction is right */
+.timeline-marker.right {
+  order: 2;
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+/* Make sure the content box and marker are aligned */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-circle-centered {
+  position: absolute;
+  left: 50%; /* center horizontally on the page */
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fdfdfd;
+  border: 2px solid #ffffff;
+  z-index: 2;
+}
+
+.timeline-item-wrapper {
+  position: relative; /* needed for absolute positioning */
+}
+
+.timeline-date {
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #ffffff;
+  z-index: 10;
+  justify-content: center;
+}
+
+.timeline-date.left {
+  right: 100%;
+  margin-right: 20px; /* optional spacing */
+}
+
+.timeline-date.right {
+  left: 100%;
+  margin-left: 20px;
+}
+
+/* Logo next to the date */
+.timeline-logo {
+    position: fixed;       /* fixed relative to viewport */
+    top: 50%;              /* vertical center of viewport */
+    width: 100px;           /* fixed width */
+    height: 100px;          /* fixed height */
+    object-fit: contain;   
+    transform: translate(-50%, -50%); /* truly center it */
+    z-index: 10;
+}
+

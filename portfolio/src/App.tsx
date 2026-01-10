@@ -3,7 +3,7 @@ import Intro from "./components/Intro";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import StarSparkles from "./components/Effects/Sparkle";
-
+import Resume from "./components/Resume";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +19,10 @@ const App: React.FC = () => {
 
       <section className="Page" id="Projects-Page">
         <Projects />
+      </section>
+
+      <section className="Page" id="Resume-Page">
+        <Resume />
       </section>
     </div>
 
