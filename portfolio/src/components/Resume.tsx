@@ -57,9 +57,9 @@ const Resume: React.FC = () => {
             <h1>My Experience</h1>
             <div className="vertical-line" />
 
-            <div className="timeline-circle" style={{ top: `420px` }}/>
-            <div className="timeline-circle" style={{ top: `905px` }}/>
-            <div className="timeline-circle" style={{ top: `1435px` }}/>
+            <div className="timeline-circle" style={{ top: `410px` }}/>
+            <div className="timeline-circle" style={{ top: `895px` }}/>
+            <div className="timeline-circle" style={{ top: `1425px` }}/>
 
             <div className="timeLineItems">
                 <Timeline items={experience} />

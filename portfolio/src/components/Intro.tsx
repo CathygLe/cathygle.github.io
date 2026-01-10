@@ -19,8 +19,8 @@ const Intro: React.FC = () => {
               Welcome to{" "}
               <Typewriter
                 texts={["My Website! :)", "Cathy's Website"]}
-                speed={75}
-                pause={1750}
+                speed={50}
+                pause={600}
                 initialDelay={250}
               />
             </span>
