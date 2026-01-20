@@ -8,15 +8,23 @@ import project2 from "../assets/images/project2-image.png";
 import project3 from "../assets/images/project3-image.png";
 import project4 from "../assets/images/project4-image.png";
 import project5 from "../assets/images/project5-img.png";
+import project6 from "../assets/images/project6-image.png";
 
 
 const projectData = [
     {
         title: "Prepal",
-        description: "PrepPal is a Java-based application that manages user recipes and generates grocery lists.",
+        description: "A Java-based app that helps users create and manage recipes, track their history, and quickly generate grocery lists.",
         link: "https://github.com/CathygLe/Prepal",
         image: project1,
         tech: ["Java", "JUnit", "Java Swing"]
+    },
+    {
+    title: "SwiftAId – AI Emergency Assistant",
+    description: "An AI assistant that provides medical guidance, detects falls, contacts emergency services, and redirects users to the nearest hospital.",
+    link: "https://github.com/krupa-r/nwhacks2026",
+    image: project6, 
+    tech: ["React", "TypeScript", "Gemini API", "Python"]
     },
     {
         title: "Furminder", 
