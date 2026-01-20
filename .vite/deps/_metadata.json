@@ -1,0 +1,44 @@
+{
+  "hash": "27e512d2",
+  "configHash": "c4eeb250",
+  "lockfileHash": "a1a3d933",
+  "browserHash": "db579b56",
+  "optimized": {
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "4cf1dd35",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "2a40fa3c",
+      "needsInterop": true
+    },
+    "react-icons/ri": {
+      "src": "../../node_modules/react-icons/ri/index.mjs",
+      "file": "react-icons_ri.js",
+      "fileHash": "ea61fe08",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "356d113e",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "f5964c98",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "react-BhPhf8gb": {
+      "file": "react-BhPhf8gb.js",
+      "isDynamicEntry": false
+    }
+  }
+}
