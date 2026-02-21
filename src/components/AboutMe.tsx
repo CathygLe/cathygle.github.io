@@ -75,7 +75,7 @@ const AboutMe: React.FC = () => {
                 <div className="headshot"><img src={headshot3} alt="Photo 3" /></div>
             </div>
         </div>
-        <h2 style={{ fontSize: "35px"}}>My Hobbies</h2>
+        <h2 style={{ fontSize: "35px", color: "white"}}>My Hobbies</h2>
             <div className="hobbies-container">
                 <div className="hobbies-container">
                     {hobbies.map((hobby, index) => (
@@ -88,7 +88,7 @@ const AboutMe: React.FC = () => {
                     ))}
                 </div>
             </div>
-        <h2 style={{ fontSize: "30px"}}>Programming Languages</h2>
+        <h2 style={{ fontSize: "30px", color: "white" }}>Programming Languages</h2>
             <div className="tech-icons">
                 <AnimatedIcon src={python} alt="Python" label="Python" fromLeft={true} />
                 <AnimatedIcon src={c} alt="C/C++" label="C++" fromLeft={false} />
@@ -99,7 +99,7 @@ const AboutMe: React.FC = () => {
                 <AnimatedIcon src={racket} alt="Racket" label="Dr Racket" fromLeft={true} />
             </div>
 
-        <h2 style={{ fontSize: "30px"}}>Tools & Platforms</h2>
+        <h2 style={{ fontSize: "30px", color: "white" }}>Tools & Platforms</h2>
             <div className="tools-icons">
                 <AnimatedIcon src={github} alt="GitHub" label="GitHub" fromLeft={true} />
                 <AnimatedIcon src={jira} alt="Jira" label="Jira" fromLeft={false} />
