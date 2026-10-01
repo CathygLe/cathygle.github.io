@@ -278,7 +278,15 @@
 
     .tech-icons,
     .tools-icons {
-        gap: 1.25rem 1.5rem;
+        gap: 1.25rem 1rem;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+
+    .icon {
+        flex: 0 1 5.75rem;
+        max-width: 100%;
+        min-width: 0;
     }
 
     .custom-icon {
@@ -288,6 +296,8 @@
 
     .icon span {
         font-size: 0.85rem;
+        line-height: 1.25;
+        max-width: 100%;
     }
 
     .hobby-wrapper {
@@ -322,5 +332,39 @@
     .hobby-box p {
         font-size: 0.95rem;
         line-height: 1.45;
+    }
+}
+
+@media (max-width: 430px) {
+    .about-me-page {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .tech-icons,
+    .tools-icons {
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        gap: 1rem 0.4rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .icon {
+        flex: 0 0 30%;
+        width: 30%;
+        max-width: 7rem;
+    }
+
+    .custom-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .icon span {
+        font-size: 0.78rem;
+        overflow-wrap: break-word;
     }
 }
