@@ -137,3 +137,48 @@
 .tech-header::after {
   margin-left: 10px; 
 }
+
+@media (max-width: 800px) {
+    .Projects {
+        padding: 5.5rem 0 3rem;
+    }
+
+    .title {
+        font-size: clamp(2.1rem, 9vw, 2.8rem);
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+    }
+
+    .Projects-Text p {
+        font-size: 1.05rem;
+        line-height: 1.5;
+        padding: 0 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        width: min(520px, 92%);
+        gap: 1.25rem;
+    }
+
+    .project-square {
+        padding: 1.1rem;
+        min-width: 0;
+    }
+
+    .project-square:hover {
+        transform: none;
+    }
+
+    .project-square h2,
+    .project-square p {
+        margin-left: 0;
+        margin-right: 0;
+        overflow-wrap: break-word;
+    }
+
+    .project-square h2 {
+        font-size: 1.25rem;
+    }
+}

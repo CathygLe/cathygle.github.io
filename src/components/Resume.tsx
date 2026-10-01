@@ -10,7 +10,7 @@ import type { TimelineItem } from "./Effects/Timeline";
 
 const experience: TimelineItem[] = [
     {
-    date: "January 2026 - Present",
+    date: "January 2026 - September 2026",
     company: "EVR",
     role: "Software Developer Engineer",
     logo: EVR,

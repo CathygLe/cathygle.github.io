@@ -108,18 +108,51 @@
 }
 
 @media (max-width: 768px) {
+    .intro-page,
+    .intro-background,
+    .intro-overlay {
+        width: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+        min-height: 100dvh;
+        height: 100vh;
+        height: 100dvh;
+    }
+
     .intro-content {
         margin-left: 0;
         margin-right: 0;
         margin-inline: auto;
-        width: 90%;
-        padding: 1rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 5rem 1.25rem 4.5rem;
         transform: none;
+    }
+
+    .welcome-text {
+        font-size: clamp(1.8rem, 8vw, 2.6rem);
     }
 
     .website-text {
         white-space: normal;
         min-width: 0;
-        font-size: 6.5vw; 
+        max-width: 100%;
+        font-size: clamp(1.65rem, 7vw, 2.6rem);
+    }
+}
+
+@media (max-width: 900px) and (max-height: 500px) {
+    .intro-content {
+        padding-top: 4.25rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .welcome-text {
+        font-size: 1.55rem;
+    }
+
+    .website-text {
+        font-size: 1.4rem;
     }
 }

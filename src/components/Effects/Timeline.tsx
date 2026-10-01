@@ -38,8 +38,15 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
 
                         <div className="description-border">
                             <div className="description-box">
-                                <h3 className="company-name">{item.company}</h3>
-                                <h4 className="role-name">{item.role}</h4>
+                                <div className="description-heading">
+                                    {item.logo && (
+                                        <img src={item.logo} alt="" className="timeline-inline-logo" />
+                                    )}
+                                    <div className="description-heading-text">
+                                        <h3 className="company-name">{item.company}</h3>
+                                        <h4 className="role-name">{item.role}</h4>
+                                    </div>
+                                </div>
 
                                 <ul className="description-list">
                                     {item.description.map((bullet, i) => (

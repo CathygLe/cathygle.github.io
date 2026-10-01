@@ -9,9 +9,17 @@ import project3 from "../assets/images/project3-image.png";
 import project4 from "../assets/images/project4-image.png";
 import project5 from "../assets/images/project5-img.png";
 import project6 from "../assets/images/project6-image.png";
+import project7 from "../assets/images/project7-image.png";
 
 
 const projectData = [
+    {
+        title: "Points System",
+        description: "A full-stack application for managing customer accounts, points balances, rewards, and point transactions. Administrators manage customers, businesses, rewards, and points activity, while customers view their points and redeem available rewards.",
+        link: "https://app.sparklenailsvancouver.com/login",
+        image: project7,
+        tech: ["React", "Vite", "Express", "Prisma", "PostgreSQL", "JWT"]
+    },
     {
         title: "Prepal",
         description: "A Java-based app that helps users create and manage recipes, track their history, and quickly generate grocery lists.",
@@ -87,7 +95,7 @@ const Projects: React.FC = () => {
                     <div className="project-tech">
                         {proj.tech.map((techItem, idx) => (
                             <span key={idx} className="tech-badge">
-                            <RiCheckboxCircleLine style={{ marginLeft: "30px" }} /> {techItem}
+                            <RiCheckboxCircleLine /> {techItem}
                             </span>
                         ))}
                     </div>

@@ -165,3 +165,71 @@
     z-index: 10;
 }
 
+.timeline-inline-logo {
+    display: none;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.description-heading-text {
+    min-width: 0;
+    flex: 1;
+}
+
+@media (max-width: 1024px) {
+    .timeline,
+    .timeline-item,
+    .timeLineItems {
+        width: 100%;
+    }
+
+    .timeline-item-wrapper.left,
+    .timeline-item-wrapper.right {
+        transform: none;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 1.6rem;
+    }
+
+    .description-border {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .description-heading {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .timeline-inline-logo {
+        display: block;
+    }
+
+    .timeline-date.left,
+    .timeline-date.right {
+        position: static;
+        transform: none;
+        left: auto;
+        right: auto;
+        display: inline-block;
+        margin-bottom: 0.55rem;
+        white-space: normal;
+        text-align: left;
+    }
+
+    .description-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .description-list {
+        overflow-wrap: break-word;
+    }
+}
+

@@ -97,10 +97,26 @@
     color: #e7e7e7;
 }
 
+.section-heading {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: 0.25rem 0;
+}
+
 @media (max-width: 900px) {
     .about-me-page {
         flex-direction: column;
-        padding: 2rem;
+        align-items: center;
+        padding: 5.5rem 1.15rem 2.5rem;
+        overflow: visible;
+    }
+
+    .mainIntro {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1.75rem;
     }
 
     .introduction {
@@ -111,13 +127,22 @@
     }
 
     .headshot-scroll {
-        width: 80%;
-        height: 320px;
+        width: min(320px, 78vw);
+        height: min(420px, 100vw);
+        margin-left: 0;
     }
 
-    .introduction h1 { font-size: 2.4rem; }
+    .about-me-page .introduction .title,
+    .introduction h1 {
+        font-size: clamp(2.1rem, 9vw, 3rem);
+    }
+
     .introduction h2 { font-size: 1.15rem; }
     .introduction p { font-size: 1rem; }
+
+    .section-heading {
+        font-size: 1.5rem;
+    }
 }
 
 /* Container for all icons */
@@ -240,4 +265,62 @@
 
 .scroll-down2 {
     animation: scrollBounce 1.6s infinite;
+}
+
+@media (max-width: 900px) {
+    .tech-icons,
+    .tools-icons,
+    .hobbies-container {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .tech-icons,
+    .tools-icons {
+        gap: 1.25rem 1.5rem;
+    }
+
+    .custom-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .icon span {
+        font-size: 0.85rem;
+    }
+
+    .hobby-wrapper {
+        width: min(430px, 100%);
+    }
+
+    .hobby-box {
+        width: 100%;
+        height: auto;
+        border-radius: 180px 180px 0 0;
+        padding: 0.75rem 0.75rem 1.25rem;
+    }
+
+    .hobby-photo {
+        width: 92%;
+        height: 200px;
+        flex-shrink: 0;
+        border-radius: 160px 160px 0 0;
+    }
+
+    .hobby-wrapper::before {
+        border-radius: 180px 180px 0 0;
+        left: 0;
+        bottom: 8px;
+        width: calc(100% - 8px);
+    }
+
+    .hobby-box h3 {
+        font-size: 1.15rem;
+    }
+
+    .hobby-box p {
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
 }
